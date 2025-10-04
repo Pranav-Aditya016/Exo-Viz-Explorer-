@@ -1,50 +1,76 @@
-# Exo-Viz-Explorer-
-Exo Viz Explorer is an interactive visualization platform designed to explore and analyze exoplanetary data with the help of machine learning models and modern web technologies. The project combines deep learning predictions (via a trained model) with a clean, responsive, and performant React + Vite frontend for an engaging user experience.
+# ExoVision 3D - Planet Explorer
 
+An immersive 3D exoplanet visualization application that allows you to explore confirmed exoplanets in stunning detail. Discover habitable worlds, analyze planetary features, and visualize AI-powered predictions in a beautiful space environment.
 
-🚀 Features
+## Features
 
-🌍 Exoplanet Visualization – Explore celestial objects with interactive charts and visual tools
+- 🌌 Interactive 3D planet visualizations
+- 🪐 Explore confirmed exoplanet data
+- 🔍 Analyze planetary characteristics
+- 🎨 Beautiful space-themed UI
+- 📱 Responsive design
 
-🤖 Machine Learning Integration – Includes a pre-trained model (combined_model.h5) for predictive insights
+## Getting Started
 
-⚡ Modern Frontend Stack – Built using React + TypeScript + Vite
+### Prerequisites
 
-🎨 Responsive UI – Styled with TailwindCSS for sleek and adaptive design
+- Node.js (v16 or higher)
+- npm or yarn
 
-📊 Data-Driven Exploration – Supports real-time rendering and visual analytics
+### Installation
 
-🛠️ Tech Stack
+1. Clone the repository:
 
-Frontend: React, Vite, TypeScript
-
-Styling: TailwindCSS, PostCSS
-
-Backend / Model: TensorFlow/Keras (.h5 model file)
-
-Package Management: npm / bun
-
-exo-viz-explorer/
-├── public/              # Static assets
-├── src/                 # Frontend source code
-├── combined_model.h5    # Trained ML model
-├── combined_model.json  # Model architecture
-├── package.json         # Dependencies
-├── vite.config.ts       # Vite configuration
-└── tailwind.config.ts   # Tailwind setup
-
-
-# Clone the repository
-git clone https://github.com/your-username/exo-viz-explorer.git
+```bash
+git clone <repository-url>
 cd exo-viz-explorer
+```
 
-# Install dependencies
-npm install   # or bun install
+2. Install dependencies:
 
-# Run development server
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
 npm run dev
+```
 
-# Build for production
+4. Open your browser and navigate to `http://localhost:8080`
+
+## Technologies Used
+
+- **React** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Three.js** - 3D graphics
+- **React Three Fiber** - React integration for Three.js
+- **Tailwind CSS** - Styling
+- **shadcn/ui** - UI components
+
+## Project Structure
+
+```
+src/
+├── components/     # React components
+├── pages/         # Page components
+├── data/          # Planet data and configurations
+├── hooks/         # Custom React hooks
+└── lib/           # Utility functions
+```
+
+## Development
+
+The project uses Vite for fast development with hot module replacement. The development server runs on port 8080 by default.
+
+## Deployment
+
+Build the project for production:
+
+```bash
 npm run build
+```
 
-
+The built files will be in the `dist` directory, ready for deployment to any static hosting service.
